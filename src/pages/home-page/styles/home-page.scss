@@ -15,7 +15,8 @@ main {
 }
 
 .tiles-section {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
     gap: 1rem;
 }
@@ -24,6 +25,7 @@ main {
     background-color: var(--color-tile-background);
     border-radius: var(--radius-mobile);
     padding: 1.25rem;
+    flex: 1 max(14.1rem, 45%);
 
     // colors for symbol background
     &:nth-child(1) {
@@ -77,4 +79,6 @@ main {
     }
 
 }
+
+
 
