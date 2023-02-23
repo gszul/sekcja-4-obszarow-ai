@@ -1,0 +1,33 @@
+/// Root Styles file
+/// Here we define all the root variables we need for our project.
+/// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
+
+@import 'fonts.scss';
+
+:root {
+    // Primary colors
+    --color-background: #0F162D;
+    --color-icon-machinelearning: #CA59FF;
+    --color-icon-computervision: #6C7CFF;
+    --color-icon-naturallanguage: #2AFFFF;
+    --color-icon-robotics: #FFF629;
+
+    // Secondary colors
+    --color-text: #ffffff;
+    --color-tile-background: #272D42;
+    --color-accent: #000000;
+
+    // Rounding
+    --radius-desktop: 24px;
+    --radius-mobile: 16px;
+    
+    // Fonts
+    --font-family: 'DM Sans', sans-serif;
+    --font-h1-desktop: 500 48px/56px var(--font-family);
+    --font-h1-mobile: 500 32px/40px var(--font-family);
+    --font-h2: 500 20px/24px var(--font-family);
+    --font-body-1: 400 16px/24px var(--font-family);
+    --font-body-2: 400 14px/22px var(--font-family);
+
+    font: var(--font-body-1);
+}
