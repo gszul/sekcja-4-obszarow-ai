@@ -23,3 +23,9 @@ h1 {
 h2 {
   font: var(--font-h2);
 }
+
+@media screen and (min-width: 31rem) {
+  h1 {
+    font: var(--font-h1-desktop);
+  }
+}

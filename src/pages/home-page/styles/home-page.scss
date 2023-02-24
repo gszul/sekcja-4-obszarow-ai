@@ -1,11 +1,23 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
 
+#home-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
 main {
-    margin: 3rem 1rem;
+    width: min(100%,73rem);
+    padding: 3rem 1rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
+}
+
+section {
+    flex: 0 24rem;
 }
 
 .describe-section {
@@ -25,7 +37,12 @@ main {
     background-color: var(--color-tile-background);
     border-radius: var(--radius-mobile);
     padding: 1.25rem;
-    flex: 1 max(14.1rem, 45%);
+    flex: 1 max(14rem, 45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
 
     // colors for symbol background
     &:nth-child(1) {
@@ -49,7 +66,6 @@ main {
         position: relative;
         display: grid;
         place-items: center;
-        margin: 0 auto 1rem;
         width: 56px;
         height: 56px;
         border-radius: var(--radius-mobile);
@@ -69,10 +85,6 @@ main {
         }
     }
 
-    & h2 {
-        margin-bottom: 1rem;
-    }
-
     & p {
         font: var(--font-body-2);
         opacity: .5;
@@ -80,5 +92,54 @@ main {
 
 }
 
+// Tablet (>495px)
+@media screen and (min-width: 31rem) {
+    .describe-section {
+        flex: 0 496px;
+    }
 
+    .tiles-section {
+        flex: 0 496px;
+    }
+
+    .tile {
+        border-radius: var(--radius-desktop);
+        padding-inline: 1rem;
+    }
+}
+
+// Desktop (>1015px)
+@media screen and (min-width: 63.5rem) {
+    main {
+        justify-content: space-between;
+    }
+
+    .describe-section {
+        flex-basis: 467px; 
+        
+        & h1 {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .tiles-section {
+        gap: 1.5rem;
+        row-gap: 2rem;
+        flex: 1;
+        max-width: 560px;
+    }
+    
+    .tile {
+        padding-block: 1.5rem;
+
+        & &__symbol {
+            width: 64px;
+            height: 64px;
+        }
+
+        & p {
+            font: var(--font-body-1);
+        }
+    }
+}
 
