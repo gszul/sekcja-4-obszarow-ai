@@ -3,7 +3,7 @@
 
 @import "styles/normalize.scss";
 @import "styles/fonts.scss";
-@import"styles/root.scss";
+@import "styles/root.scss";
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -24,6 +24,7 @@ h2 {
   font: var(--font-h2);
 }
 
+// Tablet (>495px)
 @media screen and (min-width: 31rem) {
   h1 {
     font: var(--font-h1-desktop);

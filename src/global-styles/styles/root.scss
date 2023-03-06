@@ -4,6 +4,15 @@
 
 @import 'fonts.scss';
 
+$tablet: 496px;
+$desktop: 1016px;
+
+@mixin rwd($media) {
+    @media only screen and (min-width: $media){
+        @content;
+    }
+}
+
 :root {
     // Primary colors
     --color-background: #0F162D;
