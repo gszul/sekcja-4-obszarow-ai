@@ -18,15 +18,12 @@ body {
 
 h1 {
   font: var(--font-h1-mobile);
+
+  @include media($tablet) {
+    font: var(--font-h1-desktop);
+  }
 }
 
 h2 {
   font: var(--font-h2);
-}
-
-// Tablet (>495px)
-@media screen and (min-width: 31rem) {
-  h1 {
-    font: var(--font-h1-desktop);
-  }
 }
